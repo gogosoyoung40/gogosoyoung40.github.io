@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>꿈마비움연구소 | 정리가 삶을 바꿉니다</title>
+  <meta name="description" content="꿈마비움연구소는 정리·미니멀 라이프 전문 브랜드입니다. 전자책 《지금 당장 버려야 할 물건 50가지》로 버리고 나서야 보이는 것들을 경험하세요.">
+  <meta name="keywords" content="정리, 미니멀리즘, 비움, 정리정돈, 전자책, 꿈마비움연구소, 미니멀라이프, 정리법, 버리기">
+  <meta name="author" content="꿈마비움연구소">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kkummabieum.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="꿈마비움연구소 | 정리가 삶을 바꿉니다">
+  <meta property="og:description" content="버리고 나서야 보이는 것들. 꿈마비움연구소의 정리 철학과 전자책을 만나보세요.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200">
+  <meta property="og:url" content="https://www.kkummabieum.com/">
+  <meta property="og:site_name" content="꿈마비움연구소">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="꿈마비움연구소 | 정리가 삶을 바꿉니다">
+  <meta name="twitter:description" content="버리고 나서야 보이는 것들. 꿈마비움연구소의 정리 철학과 전자책을 만나보세요.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "꿈마비움연구소",
+    "url": "https://www.kkummabieum.com",
+    "description": "정리·미니멀 라이프 전문 브랜드. 전자책 출판 및 정리 컨설팅.",
+    "sameAs": [],
+    "offers": {
+      "@type": "Offer",
+      "name": "지금 당장 버려야 할 물건 50가지",
+      "description": "버리고 나서야 보이는 것들 — 정리 전자책",
+      "priceCurrency": "KRW",
+      "price": "12900"
+    }
+  }
+  </script>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Noto Serif KR + Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage: #8A9E8C;
+      --sage-light: #EEF2EE;
+      --sage-dark: #5C7260;
+      --ink: #1A1A1A;
+      --ink-muted: #6B6B6B;
+      --cream: #FAFAF8;
+      --white: #FFFFFF;
+      --border: rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+      color: var(--ink);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    .navbar {
+      background: rgba(250,250,248,0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--ink) !important;
+      letter-spacing: 0.02em;
+    }
+    .navbar-brand span { color: var(--sage-dark); }
+    .nav-link {
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--ink-muted) !important;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 1rem !important;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--ink) !important; }
+    .nav-cta {
+      background: var(--ink) !important;
+      color: var(--white) !important;
+      border-radius: 50px !important;
+      font-size: 0.8rem !important;
+      padding: 0.45rem 1.2rem !important;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover {
+      background: var(--sage-dark) !important;
+      transform: scale(1.02);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&q=85&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center 40%;
+      transform: scale(1.05);
+      transition: transform 8s ease-out;
+    }
+    .hero-bg.loaded { transform: scale(1); }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(250,250,248,0.97) 0%,
+        rgba(250,250,248,0.90) 45%,
+        rgba(250,250,248,0.40) 75%,
+        rgba(250,250,248,0.10) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: var(--sage-dark);
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.7s 0.2s forwards;
+    }
+    .hero-title {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.35s forwards;
+    }
+    .hero-title em {
+      font-style: normal;
+      color: var(--sage-dark);
+      position: relative;
+    }
+    .hero-title em::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0; right: 0;
+      height: 2px;
+      background: var(--sage);
+      opacity: 0.5;
+      border-radius: 2px;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--ink-muted);
+      font-weight: 300;
+      margin-bottom: 2.4rem;
+      line-height: 1.7;
+      max-width: 440px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.5s forwards;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.65s forwards;
+    }
+    .btn-primary-dark {
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      padding: 0.85rem 2rem;
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary-dark:hover {
+      background: var(--sage-dark);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 50px;
+      padding: 0.85rem 1.8rem;
+      font-size: 0.88rem;
+      font-weight: 400;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-ghost:hover {
+      border-color: var(--ink);
+      background: rgba(0,0,0,0.03);
+      color: var(--ink);
+      transform: translateY(-1px);
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 2;
+      opacity: 0;
+      animation: fadeIn 1s 1.2s forwards;
+    }
+    .hero-scroll span {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: var(--ink-muted);
+      opacity: 0.3;
+      position: relative;
+      overflow: hidden;
+    }
+    .scroll-line::after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--sage-dark);
+      animation: scrollDown 2s 1.5s infinite;
+    }
+
+    /* PHILOSOPHY STRIP */
+    .philosophy-strip {
+      background: var(--ink);
+      padding: 1.4rem 0;
+      overflow: hidden;
+    }
+    .philosophy-strip .ticker {
+      display: flex;
+      gap: 3rem;
+      animation: ticker 18s linear infinite;
+      white-space: nowrap;
+    }
+    .philosophy-strip span {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .philosophy-strip span.dot {
+      color: var(--sage);
+    }
+
+    /* SECTION COMMON */
+    section { padding: 7rem 0; }
+    .section-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: var(--sage-dark);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      line-height: 1.3;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
+    }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--ink-muted);
+      line-height: 1.8;
+      font-weight: 300;
+      max-width: 520px;
+    }
+
+    /* ABOUT */
+    .about-section { background: var(--white); }
+    .about-img-wrap {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .about-img-wrap img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .about-img-wrap:hover img { transform: scale(1.03); }
+    .about-img-badge {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      background: var(--white);
+      padding: 1rem 1.4rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    }
+    .about-img-badge .num {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--sage-dark);
+      line-height: 1;
+    }
+    .about-img-badge .label {
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      margin-top: 0.2rem;
+      letter-spacing: 0.05em;
+    }
+    .about-tag {
+      display: inline-block;
+      background: var(--sage-light);
+      color: var(--sage-dark);
+      font-size: 0.72rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      margin: 0.2rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    /* BOOK */
+    .book-section { background: var(--cream); }
+    .book-card {
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .book-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.09);
+    }
+    .book-cover {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+    .book-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .book-card:hover .book-cover img { transform: scale(1.05); }
+    .book-cover-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+    .book-badge {
+      background: var(--sage);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 50px;
+      letter-spacing: 0.08em;
+    }
+    .book-body { padding: 1.6rem; }
+    .book-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .book-desc {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    .book-price {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .book-price-original {
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      text-decoration: line-through;
+      margin-right: 0.5rem;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    /* CHAPTERS */
+    .chapters-section { background: var(--white); }
+    .chapter-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.8rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      transition: opacity 0.2s;
+      cursor: default;
+    }
+    .chapter-item:last-child { border-bottom: none; }
+    .chapter-item:hover { opacity: 0.75; }
+    .chapter-num {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 0.72rem;
+      color: var(--sage);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      width: 3.5rem;
+      flex-shrink: 0;
+      padding-top: 0.15rem;
+    }
+    .chapter-content {}
+    .chapter-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .chapter-desc {
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .chapter-count {
+      margin-left: auto;
+      font-size: 0.7rem;
+      color: var(--sage-dark);
+      background: var(--sage-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      flex-shrink: 0;
+      align-self: center;
+      font-weight: 500;
+    }
+
+    /* QUOTE */
+    .quote-section {
+      background: var(--ink);
+      padding: 8rem 0;
+    }
+    .quote-text {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+      color: var(--white);
+      line-height: 1.55;
+      letter-spacing: -0.01em;
+    }
+    .quote-text em {
+      font-style: normal;
+      color: var(--sage);
+    }
+    .quote-source {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+    }
+
+    /* HOW IT WORKS */
+    .how-section { background: var(--cream); }
+    .step-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .step-item {
+      display: flex;
+      gap: 2rem;
+      padding: 2.2rem 0;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateX(-16px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-item.visible { opacity: 1; transform: translateX(0); }
+    .step-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--sage-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: 'Noto Serif KR', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--sage-dark);
+    }
+    .step-body {}
+    .step-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .how-img {
+      border-radius: 4px;
+      overflow: hidden;
+      height: 100%;
+      min-height: 400px;
+    }
+    .how-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--sage-light);
+      padding: 8rem 0;
+      text-align: center;
+    }
+    .cta-title {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--ink);
+      line-height: 1.35;
+      margin-bottom: 1.2rem;
+    }
+    .cta-sub {
+      font-size: 0.95rem;
+      color: var(--ink-muted);
+      margin-bottom: 2.5rem;
+      line-height: 1.75;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink);
+      padding: 4rem 0 2.5rem;
+    }
+    .footer-brand {
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    .footer-desc {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.7;
+      max-width: 300px;
+    }
+    .footer-link {
+      display: block;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
+    }
+    .footer-link:hover { color: var(--white); }
+    .footer-label {
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 1rem;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.2);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes scrollDown {
+      0% { top: -100%; }
+      100% { top: 100%; }
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* SCROLL REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      section { padding: 5rem 0; }
+      .hero { min-height: 100svh; }
+      .hero-overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(250,250,248,0.97) 0%,
+          rgba(250,250,248,0.90) 60%,
+          rgba(250,250,248,0.70) 100%
+        );
+      }
+      .about-img-wrap img { height: 320px; }
+      .how-img { min-height: 260px; margin-bottom: 2rem; }
+      .quote-section, .cta-section { padding: 5rem 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">꿈마<span>비움</span>연구소</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="메뉴 열기">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">연구소 소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#book">전자책</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chapters">목차</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="#book">전자책 구매하기</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="히어로 섹션">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <p class="hero-eyebrow">꿈마비움연구소</p>
+          <h1 class="hero-title">
+            버린 자리에<br>
+            비로소 <em>내 삶</em>이<br>
+            들어왔다
+          </h1>
+          <p class="hero-sub">
+            정리는 물건을 치우는 일이 아닙니다.<br>
+            무엇을 위해 살 것인지 선택하는 일입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#book" class="btn-primary-dark">전자책 보러가기</a>
+            <a href="#about" class="btn-ghost">연구소 소개</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="philosophy-strip" aria-hidden="true">
+    <div class="ticker">
+      <span>비움</span><span class="dot">·</span>
+      <span>정리</span><span class="dot">·</span>
+      <span>미니멀 라이프</span><span class="dot">·</span>
+      <span>버리고 나서야 보이는 것</span><span class="dot">·</span>
+      <span>꿈마비움연구소</span><span class="dot">·</span>
+      <span>전자책 출판</span><span class="dot">·</span>
+      <span>정리 철학</span><span class="dot">·</span>
+      <span>비움</span><span class="dot">·</span>
+      <span>정리</span><span class="dot">·</span>
+      <span>미니멀 라이프</span><span class="dot">·</span>
+      <span>버리고 나서야 보이는 것</span><span class="dot">·</span>
+      <span>꿈마비움연구소</span><span class="dot">·</span>
+      <span>전자책 출판</span><span class="dot">·</span>
+      <span>정리 철학</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&q=80&auto=format&fit=crop" alt="정돈된 미니멀 인테리어" loading="lazy">
+            <div class="about-img-badge">
+              <div class="num">50</div>
+              <div class="label">버려야 할 물건</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 reveal">
+          <p class="section-eyebrow">연구소 소개</p>
+          <h2 class="section-title">
+            정리가 아니라<br>선택입니다
+          </h2>
+          <p class="section-lead mb-4">
+            꿈마비움연구소는 미니멀 라이프와 정리를 연구하는 브랜드입니다. 물건을 버리는 기술이 아니라, 무엇을 남길 것인지 스스로 결정하는 힘을 드립니다.
+          </p>
+          <p class="section-lead mb-4" style="font-size:0.88rem;">
+            유튜브 영상을 보고도, AI에게 물어봐도 실행이 어려우셨다면 — 이제는 체계적인 구조와 저자의 실전 경험이 담긴 전자책으로 시작해보세요.
+          </p>
+          <div>
+            <span class="about-tag">미니멀 라이프</span>
+            <span class="about-tag">정리 철학</span>
+            <span class="about-tag">전자책 출판</span>
+            <span class="about-tag">정리 컨설팅</span>
+            <span class="about-tag">비움의 미학</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section" aria-label="인용구">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center reveal">
+          <p class="quote-text">
+            "버리지 못하는 건<br>
+            물건이 아니라 <em>마음</em>이었다"
+          </p>
+          <p class="quote-source">꿈마비움연구소 — 정리의 시작</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book-section" id="book">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center reveal">
+          <p class="section-eyebrow">전자책</p>
+          <h2 class="section-title" style="max-width:100%">첫 번째 전자책</h2>
+          <p class="section-lead mx-auto">단순한 목록이 아닙니다. 각 물건마다 왜 못 버리는지, 버리고 나서 무엇이 달라지는지 — 경험과 철학이 담긴 이야기입니다.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 reveal">
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop" alt="전자책 지금 당장 버려야 할 물건 50가지" loading="lazy">
+              <div class="book-cover-overlay">
+                <span class="book-badge">신간 출시</span>
+              </div>
+            </div>
+            <div class="book-body">
+              <h3 class="book-title">지금 당장 버려야 할 물건 50가지</h3>
+              <p class="book-desc">— 버리고 나서야 보이는 것들<br>주방부터 마음속 짐까지, 5개 공간 50가지 이야기</p>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <div>
+                  <span class="book-price-original">15,000원</span>
+                  <span class="book-price">12,900원</span>
+                </div>
+                <a href="#" class="btn-primary-dark" style="padding: 0.65rem 1.4rem; font-size:0.82rem;">구매하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTERS -->
+  <section class="chapters-section" id="chapters">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-4 reveal">
+          <p class="section-eyebrow">목차</p>
+          <h2 class="section-title">5개 공간,<br>50가지 이야기</h2>
+          <p class="section-lead">프롤로그부터 에필로그까지, 물건을 넘어 마음의 짐까지 다룹니다.</p>
+        </div>
+        <div class="col-lg-7 offset-lg-1 reveal">
+          <div class="step-wrap">
+            <div class="chapter-item">
+              <span class="chapter-num">프롤로그</span>
+              <div class="chapter-content">
+                <p class="chapter-title">버리지 못하는 건 물건이 아니라 마음이었다</p>
+                <p class="chapter-desc">정리를 시작하기 전, 우리가 먼저 알아야 할 것들</p>
+              </div>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">1장</span>
+              <div class="chapter-content">
+                <p class="chapter-title">주방</p>
+                <p class="chapter-desc">언젠가 쓸 것 같아서 못 버린 것들</p>
+              </div>
+              <span class="chapter-count">10가지</span>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">2장</span>
+              <div class="chapter-content">
+                <p class="chapter-title">옷장</p>
+                <p class="chapter-desc">입을 것 같아서 10년째 걸려있는 것들</p>
+              </div>
+              <span class="chapter-count">10가지</span>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">3장</span>
+              <div class="chapter-content">
+                <p class="chapter-title">욕실·화장대</p>
+                <p class="chapter-desc">"다 쓰면 버리지" 하고 묵혀둔 것들</p>
+              </div>
+              <span class="chapter-count">10가지</span>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">4장</span>
+              <div class="chapter-content">
+                <p class="chapter-title">거실·서랍 속</p>
+                <p class="chapter-desc">"나중에 정리하지" 하고 넣어둔 것들</p>
+              </div>
+              <span class="chapter-count">10가지</span>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">5장</span>
+              <div class="chapter-content">
+                <p class="chapter-title">마음속 짐</p>
+                <p class="chapter-desc">물건이 아니라 감정으로 붙잡고 있던 것들</p>
+              </div>
+              <span class="chapter-count">10가지</span>
+            </div>
+            <div class="chapter-item">
+              <span class="chapter-num">에필로그</span>
+              <div class="chapter-content">
+                <p class="chapter-title">버린 자리에 비로소 내 삶이 들어왔다</p>
+                <p class="chapter-desc">비움 이후, 달라진 것들에 대하여</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="container">
+      <div class="row g-5 align-items-stretch">
+        <div class="col-lg-5 reveal">
+          <div class="how-img">
+            <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=800&q=80&auto=format&fit=crop" alt="정리된 공간" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 reveal">
+          <p class="section-eyebrow">읽는 방법</p>
+          <h2 class="section-title mb-4">각 물건마다<br>같은 질문을 합니다</h2>
+          <div class="step-wrap">
+            <div class="step-item" data-delay="0">
+              <div class="step-icon">01</div>
+              <div class="step-body">
+                <p class="step-title">왜 못 버리고 있나요?</p>
+                <p class="step-desc">독자가 "맞아, 나 얘기네" 하고 느끼는 순간부터 시작합니다. 공감이 먼저입니다.</p>
+              </div>
+            </div>
+            <div class="step-item" data-delay="100">
+              <div class="step-icon">02</div>
+              <div class="step-body">
+                <p class="step-title">버려야 하는 이유</p>
+                <p class="step-desc">실용적·건강·심리적 근거를 바탕으로, 판단의 기준을 드립니다.</p>
+              </div>
+            </div>
+            <div class="step-item" data-delay="200">
+              <div class="step-icon">03</div>
+              <div class="step-body">
+                <p class="step-title">버리고 나서야 보이는 것</p>
+                <p class="step-desc">물건이 사라진 자리에 생겨나는 공간, 감정, 그리고 삶의 변화를 이야기합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 reveal">
+          <p class="section-eyebrow text-center">지금 시작하세요</p>
+          <h2 class="cta-title">
+            오늘, 딱 한 가지만<br>버려보기로 해요
+          </h2>
+          <p class="cta-sub">
+            거창한 정리 계획은 필요 없습니다.<br>
+            첫 번째 물건을 버리는 순간, 달라집니다.
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#book" class="btn-primary-dark">전자책 구매 — 12,900원</a>
+            <a href="#chapters" class="btn-ghost">목차 먼저 보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <p class="footer-brand">꿈마비움연구소</p>
+          <p class="footer-desc">정리·미니멀 라이프 전문 브랜드. 버리고 나서야 보이는 것들을 연구합니다.</p>
+        </div>
+        <div class="col-lg-2 offset-lg-2">
+          <p class="footer-label">메뉴</p>
+          <a href="#about" class="footer-link">연구소 소개</a>
+          <a href="#book" class="footer-link">전자책</a>
+          <a href="#chapters" class="footer-link">목차</a>
+        </div>
+        <div class="col-lg-2">
+          <p class="footer-label">구매처</p>
+          <a href="#" class="footer-link">꿈마비움 직접 구매</a>
+          <a href="#" class="footer-link">크몽</a>
+          <a href="#" class="footer-link">네이버 스마트스토어</a>
+        </div>
+        <div class="col-lg-2">
+          <p class="footer-label">문의</p>
+          <a href="#" class="footer-link">이메일 문의</a>
+          <a href="#" class="footer-link">인스타그램</a>
+          <a href="#" class="footer-link">티스토리 블로그</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 꿈마비움연구소. All rights reserved.</p>
+        <p class="footer-copy">정리가 삶을 바꿉니다</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 히어로 배경 Ken Burns 효과
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('load', () => {
+      heroBg.classList.add('loaded');
+    });
+
+    // 스크롤 reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const steps = document.querySelectorAll('.step-item');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.dataset.delay || 0;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, parseInt(delay));
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+    steps.forEach(el => observer.observe(el));
+
+    // 네비게이션 스크롤 효과
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.style.boxShadow = '0 1px 20px rgba(0,0,0,0.06)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    }, { passive: true });
+
+    // 부드러운 앵커 스크롤 (오프셋 적용)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 72;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
